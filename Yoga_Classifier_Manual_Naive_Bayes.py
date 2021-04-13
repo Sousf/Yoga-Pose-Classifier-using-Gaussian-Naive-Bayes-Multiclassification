@@ -360,7 +360,7 @@ def predict_6(mean, stdev, priors, all_classes):
 
         # Find the max score and what class it belongs to via the index.
         max_gnb = np.max(gnb_score_arr)
-        max_index = -1;
+        max_index = -1
         for i, score in enumerate(gnb_score_arr):
             if score == max_gnb:
                 max_index = i
